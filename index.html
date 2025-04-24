@@ -176,18 +176,18 @@
             <h2 class="text-center mb-5">Contactez-nous</h2>
             <div class="row justify-content-center">
                 <div class="col-md-8">
-                    <form>
+                    <form action="https://formspree.io/f/manoyrdg" method="POST">
                         <div class="mb-3">
-                            <input type="text" class="form-control" placeholder="Votre nom" required>
+                            <input type="text" name="nom_prenom" class="form-control" placeholder="Votre nom et prénom" required>
                         </div>
                         <div class="mb-3">
-                            <input type="tel" class="form-control" placeholder="Votre téléphone" required>
+                            <input type="text" name="code_postal" class="form-control" placeholder="Votre code postal" pattern="[0-9]{5}" title="Veuillez entrer un code postal valide (5 chiffres)" required>
                         </div>
                         <div class="mb-3">
-                            <input type="email" class="form-control" placeholder="Votre email" required>
+                            <input type="tel" name="telephone" class="form-control" placeholder="Votre numéro de téléphone" pattern="[0-9]{10}" title="Veuillez entrer un numéro de téléphone valide (10 chiffres)" required>
                         </div>
                         <div class="mb-3">
-                            <textarea class="form-control" rows="4" placeholder="Votre message" required></textarea>
+                            <input type="email" name="email" class="form-control" placeholder="Votre adresse email" required>
                         </div>
                         <div class="text-center">
                             <button type="submit" class="btn btn-success btn-lg">Envoyer</button>
