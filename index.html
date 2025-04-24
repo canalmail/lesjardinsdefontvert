@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Jardins de Font Vert - Paysagiste à Toulon</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1558904541-efa843a96f01?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+        .service-card {
+            transition: transform 0.3s;
+            margin-bottom: 20px;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        .cta-section {
+            background-color: #2c5530;
+            color: white;
+            padding: 4rem 0;
+        }
+        .phone-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #2c5530;
+        }
+        .card-img-top {
+            height: 250px;
+            object-fit: cover;
+            object-position: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Section Hero -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h1 class="display-4 fw-bold">Les Jardins de Font Vert</h1>
+                    <p class="lead">Votre expert paysagiste à Toulon et ses environs</p>
+                    <div class="mt-4">
+                        <a href="tel:0659963631" class="btn btn-success btn-lg me-3">
+                            <i class="fas fa-phone"></i> 06 59 96 36 31
+                        </a>
+                        <a href="#contact" class="btn btn-outline-light btn-lg">Nous contacter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Services -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Nos Services</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card service-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-seedling fa-3x mb-3 text-success"></i>
+                            <h3 class="card-title">Création de Jardins</h3>
+                            <p class="card-text">Conception et réalisation de jardins sur mesure selon vos envies</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card service-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-cut fa-3x mb-3 text-success"></i>
+                            <h3 class="card-title">Taille et Élagage</h3>
+                            <p class="card-text">Entretien professionnel de vos arbres et arbustes</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card service-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-tint fa-3x mb-3 text-success"></i>
+                            <h3 class="card-title">Arrosage</h3>
+                            <p class="card-text">Installation et maintenance de systèmes d'arrosage</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Réalisations -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Nos Réalisations</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="images/jardiniere-sanary.jpg" class="card-img-top" alt="Création de jardinières à Sanary-sur-Mer">
+                        <div class="card-body">
+                            <h5 class="card-title">Création de jardinières</h5>
+                            <p class="card-text">Aménagement élégant avec bordures en acier corten à Sanary-sur-Mer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="images/oliviers-ollioules.jpg" class="card-img-top" alt="Taille des oliviers à Ollioules">
+                        <div class="card-body">
+                            <h5 class="card-title">Taille des oliviers</h5>
+                            <p class="card-text">Intervention professionnelle pour l'entretien d'oliviers à Ollioules</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="images/jardin-sanary.jpg" class="card-img-top" alt="Aménagement de jardin à Sanary-sur-Mer">
+                        <div class="card-body">
+                            <h5 class="card-title">Aménagement de jardin</h5>
+                            <p class="card-text">Création d'un jardin sec avec pose de gazon en rouleaux à Sanary-sur-Mer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="images/haies-saint-cyr.jpg" class="card-img-top" alt="Taille de haies à Saint-Cyr-sur-Mer">
+                        <div class="card-body">
+                            <h5 class="card-title">Taille de haies</h5>
+                            <p class="card-text">Entretien professionnel des haies de Lauriers amande à Saint-Cyr-sur-Mer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="images/abattage-saint-cyr.jpg" class="card-img-top" alt="Abattage d'arbres à Saint-Cyr-sur-Mer">
+                        <div class="card-body">
+                            <h5 class="card-title">Abattage d'arbres</h5>
+                            <p class="card-text">Intervention professionnelle pour l'abattage d'arbres à Saint-Cyr-sur-Mer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="images/arrosage-bandol.jpg" class="card-img-top" alt="Installation d'arrosage à Bandol">
+                        <div class="card-body">
+                            <h5 class="card-title">Installation d'arrosage</h5>
+                            <p class="card-text">Mise en place d'un système d'arrosage automatique à Bandol</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section CTA -->
+    <section class="cta-section">
+        <div class="container text-center">
+            <h2 class="mb-4">Contactez-nous dès maintenant</h2>
+            <p class="lead mb-4">Nous vous rappelons dans les plus brefs délais</p>
+            <div class="phone-number mb-4">
+                <i class="fas fa-phone"></i> 06 59 96 36 31
+            </div>
+            <a href="#contact" class="btn btn-light btn-lg">Demander un devis gratuit</a>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Contactez-nous</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Votre nom" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="tel" class="form-control" placeholder="Votre téléphone" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Votre email" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="4" placeholder="Votre message" required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-success btn-lg">Envoyer</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>Les Jardins de Font Vert - Paysagiste à Toulon</p>
+            <p>Intervention dans le Var et ses environs</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 
