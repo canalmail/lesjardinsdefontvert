@@ -10,6 +10,9 @@
 /build
 /dist
 
+# Images
+/images/
+
 # Misc
 .DS_Store
 .env
