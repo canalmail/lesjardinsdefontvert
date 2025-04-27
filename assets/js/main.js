@@ -11,27 +11,23 @@ class ContactForm {
         this.init();
     }
     init() {
-        this.form.addEventListener('submit', (e) => this.handleSubmit(e));
-    }
-    async handleSubmit(e) {
-        e.preventDefault();
-        const formData = new FormData(this.form);
-        const data = Object.fromEntries(formData.entries());
-        try {
-            // Ici, vous pouvez ajouter votre logique d'envoi de formulaire
-            console.log('Données du formulaire:', data);
-            this.showMessage('Message envoyé avec succès!', 'success');
-            this.form.reset();
-        } catch (error) {
-            this.showMessage('Une erreur est survenue. Veuillez réessayer.', 'error');
-        }
-    }
-    showMessage(message, type) {
-        const alertDiv = document.createElement('div');
-        alertDiv.className = `alert alert-${type === 'success' ? 'success' : 'danger'} mt-3`;
-        alertDiv.textContent = message;
-        this.form.appendChild(alertDiv);
-        setTimeout(() => alertDiv.remove(), 5000);
+        this.form.addEventListener('submit', (e) => {
+            // On laisse le formulaire s'envoyer naturellement à Formspree
+            console.log('Formulaire soumis à:', this.form.action);
+            
+            // On ajoute un message de chargement
+            const loadingDiv = document.createElement('div');
+            loadingDiv.className = 'alert alert-info mt-3';
+            loadingDiv.textContent = 'Envoi en cours...';
+            this.form.appendChild(loadingDiv);
+            
+            // On désactive le bouton d'envoi
+            const submitButton = this.form.querySelector('button[type="submit"]');
+            if (submitButton) {
+                submitButton.disabled = true;
+                submitButton.innerHTML = 'Envoi en cours...';
+            }
+        });
     }
 }
 
