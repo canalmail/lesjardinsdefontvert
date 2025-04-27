@@ -1,0 +1,52 @@
+/* Mobile First Approach */
+@media (max-width: 767px) {
+    .header-custom {
+        padding: 0.5rem 0.3rem;
+    }
+
+    .header-custom img {
+        max-height: 48px;
+    }
+
+    .hero-section {
+        height: 60vh;
+        padding-top: 70px;
+    }
+
+    .phone-number {
+        font-size: 1.5rem;
+    }
+
+    .service-card {
+        margin-bottom: 15px;
+    }
+
+    .card-img-top {
+        height: 200px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+    .header-custom img {
+        max-height: 60px;
+    }
+
+    .hero-section {
+        height: 70vh;
+    }
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/* Large Desktop */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+}
