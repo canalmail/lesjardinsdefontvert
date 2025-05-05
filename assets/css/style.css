@@ -79,11 +79,11 @@ body {
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/hero-bg.avif');
     background-size: cover;
     background-position: center;
-    height: 80vh;
+    height: 60vh;
     display: flex;
     align-items: center;
     color: var(--light-color);
-    padding: var(--spacing-xl) 0;
+    padding: var(--spacing-md) 0;
 }
 
 /* Service Cards */
